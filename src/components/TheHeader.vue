@@ -1,36 +1,37 @@
 <template>
-  <div class="ui vertical masthead center aligned" id="header">
+  <div
+    class="ui vertical masthead center aligned"
+    id="header"
+  >
     <div id="header-content">
       <h1 class="ui inverted header">
         {{ header }}
       </h1>
-      <p>{{ subHeader }}</p>
     </div>
   </div>
 </template>
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: 'TheHeader',
+  name: "TheHeader",
   setup() {
     const { header, subHeader } = window.__PRE_CONFIG__;
     return {
-      header, subHeader
+      header,
+      subHeader,
     };
-  }
+  },
 });
 </script>
 <style>
 #header {
-  height: 25rem;
+  height: 5rem;
   position: relative;
-  /*Replace your header image at this place!*/
-  background: url("../assets/img/cover.png") no-repeat center center;
 }
 
 #header::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -38,17 +39,7 @@ export default defineComponent({
   right: 0;
   z-index: 1;
   width: 100%;
-  background: rgba(66, 64, 64, .15);
-}
-
-#header::after {
-  content: 'Pixiv: 86597206';
-  position: absolute;
-  right: 15px;
-  bottom: 0;
-  z-index: 2;
-  color: #CDCDCD;
-  text-shadow: 1px 1px 1px #666;
+  background: rgba(66, 64, 64, 0.15);
 }
 
 #header-content {

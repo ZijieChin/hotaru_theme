@@ -49,7 +49,7 @@ div.card {
   padding: 24px;
   box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, .2);
   border-radius: .5rem;
-  background-color: rgba(255, 255, 255, .8);
+  background-color: rgba(250, 250, 250, .9);
 }
 
 div.card div.card-header span {
